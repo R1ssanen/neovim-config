@@ -5,7 +5,7 @@ return {
     config = function()
         local neogen = require("neogen")
 
-        local opts = { noremap = true, silent = true }
+        local opts = { desc = "generate Doxygen comment", noremap = true, silent = true }
         vim.api.nvim_set_keymap("n", "<Leader>dg", ":lua require('neogen').generate()<CR>", opts)
 
         neogen.setup({
