@@ -7,9 +7,6 @@ return {
         { "folke/neodev.nvim",                   opts = {} },
     },
     config = function()
-        -- import lspconfig plugin
-        local lspconfig = require("lspconfig")
-
         -- import mason_lspconfig plugin
         local mason_lspconfig = require("mason-lspconfig")
 
@@ -44,6 +41,9 @@ return {
             local hl = "DiagnosticSign" .. type
             vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
         end
+
+        -- import lspconfig plugin
+        local lspconfig = require("lspconfig")
 
         mason_lspconfig.setup_handlers({
             -- default handler for installed servers

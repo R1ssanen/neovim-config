@@ -20,7 +20,7 @@ syn match neoNumber '\d[[:digit:]]*\.\d*[eE][\-+]\=\d\+' contained display
 syn region neoString start='"' end='"'
 
 syn keyword neoType b8 u8 u16 u32 u64 i8 i16 i32 i64 f32 f64 
-syn keyword neoKeys if elif else ret cont break exit true false var put
+syn keyword neoKeys if elif else ret cont break exit true false var put for while
 
 syn keyword neoTODO contained TODO FIXME HACK INFO FIX NOTE
 syn match neoComment '\$\_.\{-}\$' contains=neoTODO
